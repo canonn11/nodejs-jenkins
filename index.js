@@ -1,15 +1,12 @@
 const express = require("express");
 const app = express();
 
-const PORT = process.env.PORT || 3000;
-const HOST = process.env.HOST || "localhost";
-
 app.get("/", (req, res) => {
   res.send("hello world");
 });
 
-app.listen(PORT, HOST, () => {
-  console.log(`Server Listening on ${HOST}:${PORT}`);
+app.listen(3000, () => {
+  console.log(`Server Listening on port 3000`);
 });
 
 module.exports = app;

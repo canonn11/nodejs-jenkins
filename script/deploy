@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh -t ubuntu@43.200.57.202 <<EOF
+ssh ubuntu@ec2-43-200-57-202.ap-northeast-2.compute.amazonaws.com <<EOF
     cd ~/nodejs-jenkins
     git pull origin master
     curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
