@@ -1,2 +1,2 @@
 #!/bin/sh
-npm test ./test/test.js --exit
+npm test ./test/linktest.js --exit
